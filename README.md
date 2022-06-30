@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - @StevenAyman
+- Frontend Mentor - https://www.frontendmentor.io/profile/StevenAyman
 
