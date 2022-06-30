@@ -1,0 +1,119 @@
+/* Variables Start */
+:root {
+    --hover-color: hsl(178, 100%, 50%);
+}
+/* Variables End */
+/* Global Rules Start */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+}
+/* Global Rules End */
+.preview {
+    width: 340px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.preview .image {
+    position: relative;
+}
+.preview img:first-child {
+    width: 100%;
+    border-radius: 12px;
+}
+.preview .image:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: hsl(178deg 100% 50% / 48%);
+    border-radius: 12px;
+}
+.preview .image:hover::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f06e";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+}
+.preview .text h1 {
+    color: hsl(0, 0%, 100%);
+    margin: 20px 0;
+    font-size: 23px;
+    font-size: 400;
+}
+.preview .text h1:hover {
+    color: var(--hover-color);
+}
+.preview .text .desc {
+    color: #91a6c3;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.preview .text .properties {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.preview .text .properties span:first-child {
+    color: var(--hover-color);
+}
+.preview .text .properties span:last-child {
+    color: hsl(215, 51%, 70%);
+}
+.preview .text .properties span:last-child i {
+    margin-right: 5px;
+}
+.preview .text .foot {
+    height: 30px;
+}
+.preview .text img {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: -7px;
+}
+.preview .text .foot p {
+    display: inline-block;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.preview .text .foot p span {
+    color: hsl(0, 0%, 100%);
+}
+.preview .text .foot p span:hover {
+    color: var(--hover-color);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
